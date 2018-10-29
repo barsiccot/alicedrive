@@ -1,0 +1,225 @@
+     <!--======================================
+    Tours Section
+    ==========================================-->
+
+  
+    <div class="panel">
+      <div class="form-inline">
+          <div class="form-group">
+              <div class="col-md-8">
+                  <input class="form-control" [(ngModel)]="name" placeholder = "Модель" />
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="col-md-6">
+                  <input type="number" class="form-control" [(ngModel)]="price" placeholder="Цена" />
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="col-md-offset-2 col-md-8">
+                  <button class="btn btn-default" (click)="addItem(name, price)">Добавить</button>
+              </div>
+          </div>
+      </div>
+      <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>Модель</th>
+                  <th>Цена</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let item of items">
+                  <td>{{item.name}}</td>
+                  <td>{{item.price}}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>`
+    <section id="section_9" class="tours_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="section_head_widget">
+                <h2>poison tours</h2>
+                <h5>all tours this year</h5>
+              </div>
+            </div>
+            <!--section_head_widget--> 
+          </div>
+          <!--row-->
+          <div>  
+            <h4>Event Binding</h4>  
+            <br/>   
+            <button  (click)="onClickMe()">Click me!</button>    
+            <br/><br/>    
+            <span> {{messageText}} </span>  
+        </div> 
+          <div class="tours_widget">
+            <div class="tour_row_header">
+              <div class="column_one"> Date </div>
+              <div class="column_two"> &nbsp;<!--no header for picture column--> 
+              </div>
+              <div class="column_three"> Location </div>
+              <div class="column_four"> Venue </div>
+              <div class="column_five"> Notes </div>
+              <div class="column_six"> Tickets </div>
+            </div>
+            <div class="tour_row animatedParent" >
+              <div class="animated fadeInDownShort">
+                <div class="column_one">
+                  <span>10/10/14</span>
+                </div>
+                <div class="column_two"> <img src="img/media_07.jpg" routerLink="/tour-details" /> </div>
+                <div class="column_three" routerLink="/tour-details"> Lorem Center </div>
+                <div class="column_four"> Fairfax, VA US </div>
+                <div class="column_five"> vIP Offers Sold Out </div>
+                <div class="column_six"> <a class="btn btn_buy_ticket" routerLink="/tour-details">buy tickets</a> </div>
+              </div>
+            </div>
+            <!--tour row-->
+            
+            <div class="tour_row animatedParent  ">
+              <div class="animated fadeInDownShort">
+                <div class="column_one">
+                  <span>10/11/14</span>
+                </div>
+                <div class="column_two"> <img src="img/media_01.jpg" alt="" /> </div>
+                <div class="column_three"> Lorem Events Center </div>
+                <div class="column_four"> Pittsburgh, PA US </div>
+                <div class="column_five"> with Emblem3 </div>
+                <div class="column_six"> <a class="btn btn_buy_ticket" href="#">buy tickets</a> </div>
+              </div>
+            </div>
+            <!--tour row-->
+            
+            <div class="tour_row animatedParent  ">
+              <div class="animated fadeInDownShort">
+                <div class="column_one">
+                  <span>15/11/14</span>
+                </div>
+                <div class="column_two"> <img src="img/media_05.jpg" alt="" /> </div>
+                <div class="column_three"> TD Lorem </div>
+                <div class="column_four"> Boston, MA US </div>
+                <div class="column_five"> with Emblem3 </div>
+                <div class="column_six"> <a class="btn btn_buy_ticket" href="#">buy tickets</a> </div>
+              </div>
+            </div>
+            <!--tour row-->
+            
+            <div class="tour_row animatedParent  ">
+              <div class="animated fadeInDownShort">
+                <div class="column_one">
+                  <span>20/11/14</span>
+                </div>
+                <div class="column_two"> <img src="img/media_01.jpg" alt="" /> </div>
+                <div class="column_three"> Lorem Center </div>
+                <div class="column_four"> Fairfax, VA US </div>
+                <div class="column_five"> vIP Offers Sold Out </div>
+                <div class="column_six"> <a class="btn btn_buy_ticket sold_out" href="#">Sold Out</a> </div>
+              </div>
+            </div>
+            <!--tour row-->
+            
+            <div class="tour_row animatedParent  ">
+              <div class="animated fadeInDownShort">
+                <div class="column_one">
+                  <span>25/11/14</span>
+                </div>
+                <div class="column_two"> <img src="img/media_08.jpg" alt="" /> </div>
+                <div class="column_three"> Wells Fargo Center </div>
+                <div class="column_four"> Philadelphia, PA US </div>
+                <div class="column_five"> with Emblem3 </div>
+                <div class="column_six"> <a class="btn btn_buy_ticket" href="#">buy tickets</a> </div>
+              </div>
+            </div>
+            <!--tour row-->
+            
+            <div class="tour_row animatedParent  ">
+              <div class="animated fadeInDownShort">
+                <div class="column_one">
+                  <span>30/11/14</span>
+                </div>
+                <div class="column_two"> <img src="img/media_07.jpg" alt="" /> </div>
+                <div class="column_three"> Lorem Center </div>
+                <div class="column_four"> Fairfax, VA US </div>
+                <div class="column_five"> vIP Offers Sold Out </div>
+                <div class="column_six"> <a class="btn btn_buy_ticket" href="#">buy tickets</a> </div>
+              </div>
+            </div>
+            <!--tour row-->
+            
+            <div class="tour_row animatedParent  ">
+              <div class="animated fadeInDownShort">
+                <div class="column_one">
+                  <span>1/12/14</span>
+                </div>
+                <div class="column_two"> <img src="img/media_06.jpg" alt="" /> </div>
+                <div class="column_three"> Lorem Center </div>
+                <div class="column_four"> Fairfax, VA US </div>
+                <div class="column_five"> with Emblem3 </div>
+                <div class="column_six"> <a class="btn btn_buy_ticket" href="#">buy tickets</a> </div>
+              </div>
+            </div>
+            <!--tour row-->
+            
+            <div class="tour_row animatedParent  ">
+              <div class="animated fadeInDownShort">
+                <div class="column_one">
+                  <span>10/12/14</span>
+                </div>
+                <div class="column_two"> <img src="img/media_02.jpg" alt="" /> </div>
+                <div class="column_three"> Lorem Center </div>
+                <div class="column_four"> Fairfax, VA US </div>
+                <div class="column_five"> vIP Offers Sold Out </div>
+                <div class="column_six"> <a class="btn btn_buy_ticket" href="#">buy tickets</a> </div>
+              </div>
+            </div>
+            <!--tour row-->
+            
+            <div class="tour_row animatedParent  ">
+              <div class="animated fadeInDownShort">
+                <div class="column_one">
+                  <span>15/12/14</span>
+                </div>
+                <div class="column_two"> <img src="img/media_03.jpg" alt="" /> </div>
+                <div class="column_three"> Lorem Center </div>
+                <div class="column_four"> Fairfax, VA US </div>
+                <div class="column_five"> with Emblem3 </div>
+                <div class="column_six"> <a class="btn btn_buy_ticket" href="#">buy tickets</a> </div>
+              </div>
+            </div>
+            <!--tour row-->
+            
+            <div class="tour_row animatedParent  ">
+              <div class="animated fadeInDownShort">
+                <div class="column_one">
+                  <span>20/12/14</span>
+                </div>
+                <div class="column_two"> <img src="img/media_04.jpg" alt="" /> </div>
+                <div class="column_three"> Lorem Center </div>
+                <div class="column_four"> Fairfax, VA US </div>
+                <div class="column_five"> vIP Offers Sold Out </div>
+                <div class="column_six"> <a class="btn btn_buy_ticket sold_out" href="#">Sold Out</a> </div>
+              </div>
+            </div>
+            <!--tour row-->
+            
+            <div class="tour_row animatedParent  ">
+              <div class="animated fadeInDownShort">
+                <div class="column_one">
+                  <span>25/12/14</span>
+                </div>
+                <div class="column_two"> <img src="img/media_05.jpg" alt="" /> </div>
+                <div class="column_three"> Ipsum! Center </div>
+                <div class="column_four"> Louisville, KY US </div>
+                <div class="column_five"> vIP Offers Sold Out </div>
+                <div class="column_six"> <a class="btn btn_buy_ticket" href="#">buy tickets</a> </div>
+              </div>
+            </div>
+            <!--tour row--> 
+          </div>
+        </div>
+        <!--container--> 
+      </section>
+      <!--//tours--> 

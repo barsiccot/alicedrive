@@ -1,0 +1,197 @@
+ <!--=============
+    Music Tracks
+    ===============-->
+    <ul class="thumbs noscript">
+      <li *ngFor="let music of music$ | async"
+        [class.selected]="music.id === selectedId">
+        <a [routerLink]="[music.id]">
+        <span class="badge">{{ music.id }}</span>{{ music.name }}
+        </a>
+      </li>
+      </ul>
+
+
+    <section id="section_3" class="newsletter_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>we have special news &amp; prizes only <br>
+              for our biggest poison fans!</h3>
+            <div class="team_prizes"> 
+              <figure class="team_stand animatedParent" data-sequence="400">
+                <img class="animated fadeInUp" data-id="1" src="img/man1.png" alt=""/>
+                  <img class="animated fadeInRight" data-id="2" src="img/man2.png" alt=""/>
+                  <img class="animated fadeInLeft" data-id="3" src="img/man3.png" alt=""/>
+                  <img class="animated fadeInRight" data-id="4" src="img/man4.png" alt=""/>
+                  <img class="animated fadeInLeft" data-id="5" src="img/man5.png" alt=""/>
+              </figure>
+              <div class="newsletter_form">
+                <form>
+                  <input type="text" placeholder="Name"/>
+                  <input type="email" placeholder="Email"/>
+                  <button>Access</button>
+                  <div class="clearfix"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section_5" class="track_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-8">
+              <div class="section_head_widget animatedParent ">
+                <h2 class="animated fadeInLeft">poison Music</h2>
+                <h5 class="animated bounceInRight">All Albums</h5>
+              </div>
+              <!--section_head_widget--> 
+            </div>
+            <div class="col-xs-12 col-sm-4 text-right">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    2014 <span class="fa fa-caret-down"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">2013</a></li>
+                    <li><a href="#">2012</a></li>
+                    <li><a href="#">2011</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+          <!--row-->
+          <div class="row tracks_widget">
+            <div class="col-sm-4 col-xs-12 animatedParent">
+              <div class="track_box animated fadeInUp">
+                <figure><img src="img/n1.jpg" alt="" /></figure>
+                <div class="track_info_wrapper">
+                  <div class="track_info">
+                    <h4>Loremipsum Per hour</h4>
+                    <h6>13 tracks</h6>
+                  </div>
+                  <!--news_info--> 
+                </div>
+                <!--//news_info_wrapper-->
+                <div class="hover"> <a class="triggerTrack" href="albums.html" data-number="1"> Read Full Article </a> </div>
+                <!--//hover--> 
+              </div>
+              <!--//news_box--> 
+            </div>
+            <!--column-->
+            
+             <div class="col-sm-4 col-xs-12 animatedParent">
+              <div class="track_box animated fadeInUp">
+                <figure><a href="/news" routerLinkActive="active"><img src="img/n2.jpg" alt="" /></a></figure>
+                <div class="track_info_wrapper">
+                  <div class="track_info">
+                    <h4>Loremipsum</h4>
+                    <h6>12 tracks</h6>
+                  </div>
+                  <!--news_info--> 
+                </div>
+                <!--//news_info_wrapper-->
+                <div class="hover">  <a class="triggerTrack" href="albums.html" data-number="2"> Read Full Article </a> </div>
+                <!--//hover--> 
+              </div>
+              <!--//news_box--> 
+            </div>
+            <!--column-->
+            
+            <div class="col-sm-4 col-xs-12 animatedParent">
+              <div class="track_box animated fadeInUp">
+                <figure><img src="img/n3.jpg" alt="" /></figure>
+                <div class="track_info_wrapper">
+                  <div class="track_info">
+                    <h4>Against the lorem</h4>
+                    <h6>12 tracks</h6>
+                  </div>
+                  <!--news_info--> 
+                </div>
+                <!--//news_info_wrapper-->
+                <div class="hover"> <a class="triggerTrack" href="albums.html" data-number="3"> Read Full Article </a> </div>
+                <!--//hover--> 
+              </div>
+              <!--//news_box--> 
+            </div>
+            <!--column-->
+            
+            <div class="col-sm-4 col-xs-12 animatedParent">
+              <div class="track_box animated fadeInUp">
+                <figure><img src="img/n4.jpg" alt="" /></figure>
+                <div class="track_info_wrapper">
+                  <div class="track_info">
+                    <h4>Everything is lorem</h4>
+                    <h6>11 tracks</h6>
+                  </div>
+                  <!--news_info--> 
+                </div>
+                <!--//news_info_wrapper-->
+                <div class="hover"> <a class="triggerTrack" href="albums.html" data-number="4"> Read Full Article </a> </div>
+                <!--//hover--> 
+              </div>
+              <!--//news_box--> 
+            </div>
+            <!--column-->
+            
+            <div class="col-sm-4 col-xs-12 animatedParent">
+              <div class="track_box animated fadeInUp">
+                <figure><img src="img/n5.jpg" alt="" /></figure>
+                <div class="track_info_wrapper">
+                  <div class="track_info">
+                    <h4>Loremipsum myself</h4>
+                    <h6>9 tracks</h6>
+                  </div>
+                  <!--news_info--> 
+                </div>
+                <!--//news_info_wrapper-->
+                <div class="hover"> <a class="triggerTrack" href="albums.html" data-number="5"> Read Full Article </a> </div>
+                <!--//hover--> 
+              </div>
+              <!--//news_box--> 
+            </div>
+            <!--column-->
+            
+            <div class="col-sm-4 col-xs-12 animatedParent">
+              <div class="track_box animated fadeInUp">
+                <figure><img src="img/n6.jpg" alt="" /></figure>
+                <div class="track_info_wrapper">
+                  <div class="track_info">
+                    <h4>The lorem Years</h4>
+                    <h6>14 tracks</h6>
+                  </div>
+                  <!--news_info--> 
+                </div>
+                <!--//news_info_wrapper-->
+                <div class="hover"> <a class="triggerTrack" href="albums.html" data-number="6"> Read Full Article </a> </div>
+                <!--//hover--> 
+              </div>
+              <!--//news_box--> 
+            </div>
+            <!--column--> 
+          </div>
+          
+        </div>
+        <div class="clearfix"></div>
+        <!--=============================tracks-Details=========================-->
+        <div class="trackLoading"><i class="fa fa-spin fa-refresh"></i></div>
+        <section id="tracksAjaxWrapper" class="container">
+        	<a class="closeTrackAjax" href="#section_5"><i class="fa fa-times"></i></a>
+            <div id="tracksAjax" class="content_expander music_widget">
+        	</div>
+        </section>
+        
+        
+        <!--//tracks-Details-->
+              
+        <div class="container">
+          <ul class="channels_list row animatedParent ">
+            <li class="col-xs-12 col-sm-4 animated fadeInLeft"><a href="#"><i class="fa fa-circular fa-music"></i>poison itunes</a></li>
+            <li class="col-xs-12 col-sm-4 animated fadeInLeft"><a href="#"><i class="fa fa-soundcloud"></i>poison soundcloud</a></li>
+            <li class="col-xs-12 col-sm-4 animated fadeInLeft"><a href="#"><i class="fa fa-youtube"></i>poison youtube</a></li>
+          </ul>
+       </div>
+       
+    </section>    
+    

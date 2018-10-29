@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { TourService } from './tours/tour.service';  
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  templateUrl: './app.components.html'
 })
 export class AppComponent  { name = 'Angular'; }
