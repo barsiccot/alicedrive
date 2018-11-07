@@ -1,6 +1,13 @@
  <!--=============
     Music Tracks
     ===============-->
+    <script>
+          $('audio').removeClass('icon-stop');
+
+    $('audio').mediaelementplayer({
+	features: ['playpause','progress','current','tracks','fullscreen']
+});
+</script>
     <ul class="thumbs noscript">
       <li *ngFor="let music of music$ | async"
         [class.selected]="music.id === selectedId">
@@ -25,11 +32,14 @@
                   <img class="animated fadeInRight" data-id="4" src="img/man4.png" alt=""/>
                   <img class="animated fadeInLeft" data-id="5" src="img/man5.png" alt=""/>
               </figure>
+              
               <div class="newsletter_form">
                 <form>
                   <input type="text" placeholder="Name"/>
                   <input type="email" placeholder="Email"/>
                   <button>Access</button>
+
+
                   <div class="clearfix"></div>
                 </form>
               </div>
@@ -80,39 +90,18 @@
               <!--//news_box--> 
             </div>
             <!--column-->
-            
-             <div class="col-sm-4 col-xs-12 animatedParent">
-              <div class="track_box animated fadeInUp">
-                <figure><a href="/news" routerLinkActive="active"><img src="img/n2.jpg" alt="" /></a></figure>
-                <div class="track_info_wrapper">
-                  <div class="track_info">
-                    <h4>Loremipsum</h4>
-                    <h6>12 tracks</h6>
-                  </div>
-                  <!--news_info--> 
-                </div>
-                <!--//news_info_wrapper-->
-                <div class="hover">  <a class="triggerTrack" href="albums.html" data-number="2"> Read Full Article </a> </div>
-                <!--//hover--> 
-              </div>
-              <!--//news_box--> 
-            </div>
+            <audio controls>
+                <source src="/img/01 Let Me Bye.mp3" type="audio/ogg; codecs=vorbis">
+                <source src="/img/01 Let Me Bye.mp3" type="audio/mpeg">
+                Тег audio не поддерживается вашим браузером. 
+                <a href="audio/music.mp3">Скачайте музыку</a>.
+              </audio>
+           
             <!--column-->
             
             <div class="col-sm-4 col-xs-12 animatedParent">
-              <div class="track_box animated fadeInUp">
-                <figure><img src="img/n3.jpg" alt="" /></figure>
-                <div class="track_info_wrapper">
-                  <div class="track_info">
-                    <h4>Against the lorem</h4>
-                    <h6>12 tracks</h6>
-                  </div>
-                  <!--news_info--> 
-                </div>
-                <!--//news_info_wrapper-->
-                <div class="hover"> <a class="triggerTrack" href="albums.html" data-number="3"> Read Full Article </a> </div>
-                <!--//hover--> 
-              </div>
+           
+        
               <!--//news_box--> 
             </div>
             <!--column-->

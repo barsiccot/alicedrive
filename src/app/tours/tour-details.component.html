@@ -1,77 +1,22 @@
-    <style>
-	@keyframes fade {
- 0%{ opacity: 0; }
-10%{ opacity: 1; }
-20%{ opacity: 1; }
-30%{ opacity: 1; }
-40%{ opacity: 0; }
-50%{ opacity: 0; }
-60%{ opacity: 0; }
-70%{ opacity: 0; }
-80%{ opacity: 0; }
-90%{ opacity: 0;}
-100% { opacity: 0; }
- }
-  .wrapperImg img {
-position:absolute;
-margin-left:50px;
-width: 70%;
-height:40%;
-overflow: hidden;
-padding: 3px;
-vertical-align: top;
-border: 1px solid #333333;
-opacity:0;
-
-animation-name: fade;
-animation-iteration-count: infinite;
-animation-duration: 20s;
-}
-.thumbs1 {
-    float: left;
-    margin: 150px 50px 40px 0;
-    overflow: hidden;
-    padding: 3px;
-    vertical-align: top;
-    border: 1px solid #333333;
-}
-.wrapperImg img:nth-child(1) { animation-delay: 0s; }
-.wrapperImg img:nth-child(2) { animation-delay: 5s; }
-.wrapperImg img:nth-child(3) { animation-delay: 10s; }
-.wrapperImg img:nth-child(4) { animation-delay: 15s; }
-</style>
- <h1>{{title}}</h1>
- <h2>My Heroes</h2>
 
 
-
-    <div class="extra">
-
-
-				 <div class="wrapperImg thumbs1" *ngIf="selectedTour">
-					  <img src="{{selectedTour.src}}">
-					  <img src="https://js.cx/gallery/img2-thumb.jpg">
-					  <img src="https://js.cx/gallery/img4-thumb.jpg">
-					  <img src="https://js.cx/gallery/img3-thumb.jpg">
-				 </div>
-				 <div class="wrapper">
-					<div class="grid_12">
-						<div class="padding-grid-1">
-							<h3 class="letter">Our <strong>Gallery</strong></h3>
-							<div id="js">
-								<div id="thumbs" class="navigation" style="margin-top:350px">
-
-									
-
-									<ul class="thumbs noscript">
-																				
-										<li *ngFor="let tour of tours"	 [class.selected]="tour === selectedTour" (click)="onSelect(tour)">
-											<a class="thumb"> <img src="{{tour.src}}" alt="" /> </a>
-										  </li>
-									</ul>
-									<div class="clear"></div>
-								</div>
-							</div>
-						</div>
-					</div>
+	
+	<section id="section_3" class="newsletter_section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-xs-12">
+			  <h3>we have special news &amp; prizes only <br>
+				for our biggest poison fans!</h3>
+			  <div class="team_prizes"> 
+		
+				
+				<div class="newsletter_form">
+				  
+					<h2>{{title}}</h2>
+				
 				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>

@@ -1,17 +1,12 @@
-import { Component,OnInit} from '@angular/core';
-
-import { Observable }     from 'rxjs';
-
-
-import { Phone } from './tour';
-import { TOUR } from './mock-tours';
-
+import { Component, OnInit} from '@angular/core';
+import {TourService} from './tour.service';
+import {Phone} from './tour';
+       
 @Component({
-  selector: 'tour-details',
-  template: '<div>www</div>'
+    selector: 'tour-details-component',
+    templateUrl: './tour-details.component.html',
+    styleUrls:['./tour-details.component.css']
 })
 export class TourDetailsComponent { 
-  title = 'Tour of Heroes';
-  
-
+    title = 'Recent Photos';
 }

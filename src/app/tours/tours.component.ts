@@ -5,11 +5,13 @@ import {Phone} from './tour';
 @Component({
     selector: 'tour-component',
     templateUrl: './tours.component.html',
-    providers:[TourService]
+    styleUrls:['./tours.component.css'],
 
 })
 export class ToursComponent implements OnInit { 
-     
+   
+     title ='Gallery';
+
     items: Phone[] = [];
     constructor(private dataService: TourService){}
      

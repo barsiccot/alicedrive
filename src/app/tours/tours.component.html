@@ -1,7 +1,6 @@
      <!--======================================
     Tours Section
     ==========================================-->
-
   
     <div class="panel">
       <div class="form-inline">
@@ -21,6 +20,9 @@
               </div>
           </div>
       </div>
+
+   
+  
       <table class="table table-striped">
           <thead>
               <tr>
@@ -53,6 +55,16 @@
             <br/>   
             <button  (click)="onClickMe()">Click me!</button>    
             <br/><br/>    
+
+            <div class="row">
+              <nav class="navbar navbar-inverse avbar-fixed-top">
+                <div class="container">
+                  <div class="navbar-header">
+                    <a class="navbar-brand logo" href="#">{{title}}</a>
+                    </div>
+                </div>
+              </nav>
+            </div>
             <span> {{messageText}} </span>  
         </div> 
           <div class="tours_widget">
@@ -65,14 +77,14 @@
               <div class="column_five"> Notes </div>
               <div class="column_six"> Tickets </div>
             </div>
-            <div class="tour_row animatedParent" >
-              <div class="animated fadeInDownShort">
+            <div class="tour_row animatedParent" *ngFor="let item of items">
+               <div class="animated fadeInDownShort">
                 <div class="column_one">
                   <span>10/10/14</span>
                 </div>
                 <div class="column_two"> <img src="img/media_07.jpg" routerLink="/tour-details" /> </div>
-                <div class="column_three" routerLink="/tour-details"> Lorem Center </div>
-                <div class="column_four"> Fairfax, VA US </div>
+                <div class="column_three" routerLink="/tour-details">{{item.name}} </div>
+                <div class="column_four">{{item.name}} </div>
                 <div class="column_five"> vIP Offers Sold Out </div>
                 <div class="column_six"> <a class="btn btn_buy_ticket" routerLink="/tour-details">buy tickets</a> </div>
               </div>
