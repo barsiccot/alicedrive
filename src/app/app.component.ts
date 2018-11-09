@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
-import { TourService } from './tours/tour.service';  
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.components.html'
+   selector: 'app-root',
+   template: `
+				<app-observable></app-observable>
+				<app-promise></app-promise>
+             `
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent { 
+
+}
+    
